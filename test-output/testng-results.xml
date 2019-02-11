@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="4144" started-at="2019-01-27T09:42:23Z" finished-at="2019-01-27T09:42:27Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="4144" started-at="2019-01-27T09:42:23Z" finished-at="2019-01-27T09:42:27Z">
+      <class name="A.C">
+        <test-method status="PASS" signature="m1()[pri:0, instance:A.C@3c09711b]" name="m1" duration-ms="46" started-at="2019-01-27T01:42:23Z" finished-at="2019-01-27T01:42:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m1 -->
+        <test-method status="FAIL" signature="m2()[pri:0, instance:A.C@3c09711b]" name="m2" duration-ms="1051" started-at="2019-01-27T01:42:23Z" finished-at="2019-01-27T01:42:24Z">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method org.testng.internal.TestNGMethod.m2() didn't finish within the time-out 1000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.m2() didn't finish within the time-out 1000
+	at java.lang.Thread.interrupt(Unknown Source)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:64)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m2 -->
+        <test-method status="FAIL" signature="m4()[pri:0, instance:A.C@3c09711b]" name="m4" duration-ms="3006" started-at="2019-01-27T01:42:24Z" finished-at="2019-01-27T01:42:27Z">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method org.testng.internal.TestNGMethod.m4() didn't finish within the time-out 3000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.m4() didn't finish within the time-out 3000
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock$NonfairSync.lock(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lock(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.processWorkerExit(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m4 -->
+      </class> <!-- A.C -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
